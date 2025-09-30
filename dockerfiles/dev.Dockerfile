@@ -8,7 +8,6 @@ RUN apt-get update && apt-get install -y \
     gcc \ 
     gdb \
     git \
-    libboost-dev \
     libssl-dev \
     net-tools \
     netcat-traditional \
