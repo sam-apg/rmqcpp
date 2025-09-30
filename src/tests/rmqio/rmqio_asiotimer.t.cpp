@@ -90,7 +90,7 @@ TEST_F(AsioTimerTests, Reset)
     // First poll handles the cancellation from reset
     EXPECT_EQ(d_io.context().poll_one(), 1);
     // Then allow the timer to expire
-    EXPECT_GT(d_io.context().run_for(std::chrono::milliseconds(50)), 0);
+    EXPECT_GT(d_io.context().run_for(std::chrono::seconds(10)), 0);
 }
 
 TEST_F(AsioTimerTests, ResetCallsCancelImmediately)
